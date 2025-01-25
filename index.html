@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Java Fullstack Developer</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #343436; /* Light blue background */
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #4a90e2, #76baff);
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 1rem 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      background: linear-gradient(90deg, #ffffff, #d9f1ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    section.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      color: #4a90e2;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Skills Section */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .skill {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skill:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .skill h3 {
+      color: #4a90e2;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Education Section */
+    .education {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .education-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .education-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .education-card h3 {
+      color: #4a90e2;
+    }
+
+    /* Contact Section */
+    .contact {
+      background: #4a90e2;
+      color: #fff;
+      padding: 2rem 1rem;
+    }
+
+    .contact a {
+      text-decoration: none;
+      background: #fff;
+      color: #4a90e2;
+      padding: 0.8rem 1.5rem;
+      font-weight: bold;
+      border-radius: 25px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .contact a:hover {
+      background: #76baff;
+      color: #fff;
+    }
+
+
+
+    /* Projects Section */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem 1rem;
+    }
+
+    .project-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0px 8px 0 rgb(5 239 185 / 95%);
+      overflow: hidden;
+      transform: scale(1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: 2px solid #eee;
+    }
+
+    .project-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .project-card h3 {
+      margin: 1rem 0 0.5rem;
+      font-size: 1.5rem;
+    }
+
+    .project-card p {
+      padding: 0 1rem 1rem;
+      font-size: 1rem;
+    }
+
+
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #f4faff;
+      color: #4a90e2;
+      font-size: 0.9rem;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Hello , I'm Dnyaneshwar Ravindra Chaudhari</h1>
+    <!-- <img src="amol2.jpg" alt="Developer Image"> -->
+    <p>Java Fullstack Developer</p>
+  </header>
+
+  <!-- Skills Section -->
+  <section class="skills-section">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">
+        <h3>Java</h3>
+        <p>Proficient in Java development, OOP, and advanced frameworks.</p>
+      </div>
+      <div class="skill">
+        <h3>Spring Boot</h3>
+        <p>Experienced in building RESTful APIs and microservices.</p>
+      </div>
+      <div class="skill">
+        <h3>React</h3>
+        <p>Skilled in creating interactive, user-friendly interfaces.</p>
+      </div>
+      <div class="skill">
+        <h3>SQL</h3>
+        <p>Expertise in database design and optimization.</p>
+      </div>
+      <div class="skill">
+        <h3>HTML & CSS</h3>
+        <p>Creative front-end design with animations and responsiveness.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="education-section">
+    <h2>Education</h2>
+    <div class="education">
+      <div class="education-card">
+        <h3>Bachelor of Computer Applications</h3>
+        <p>Kavayitri Bahinabai Chaudhari North Maharashtra University, Jalgaon </p>
+        <span>2021-2024</span>
+      </div>
+      <div class="education-card">
+        <h3>Certification in Fullstack Development</h3>
+        <p>ABC Institute, 2021</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Projects Section -->
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="bg-linkdein.jpg" alt="Project 1">
+        <h3>Inventory Management System</h3>
+        <p>A full-stack Java application for managing inventories.</p>
+      </div>
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="groceryshot.png" alt="Project 2">
+        <h3>E-commerce Platform - Online Grocery Shopping Application</h3>
+        <p>A scalable platform built with Php and Mysql.</p>
+      </div>
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="homeloanshot.png" alt="Project 3">
+        <h3>Home Loan Management System</h3>
+        <p>A great applicationt to amanges Home loans built with Php and MySQL.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>Let's build something amazing together!</p>
+    <a href="mailto:john.doe@example.com">Email Me</a>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 John Doe. All rights reserved.
+  </footer>
+
+  <script>
+    // Scroll Animation
+    const sections = document.querySelectorAll('section');
+
+    function animateOnScroll() {
+      const scrollPosition = window.innerHeight;
+
+      sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+
+        if (sectionTop < scrollPosition - 100) {
+          section.classList.add('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', animateOnScroll);
+    animateOnScroll(); // Run on page load
+  </script>
+
+</body>
+</html>
