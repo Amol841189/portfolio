@@ -15,20 +15,37 @@
     }
 
     header {
-      background: linear-gradient(90deg, #4a90e2, #76baff);
-      color: #fff;
-      text-align: center;
-      padding: 2rem 1rem;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
+    background: linear-gradient(90deg, #1c1d1e, #f10d3f);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
     header img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin: 1rem 0;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 175px;
+    height: 175px;
+    border-radius: 3%;
+    object-fit: cover;
+    margin: 1rem 0;
+    box-shadow: 0px 0px 5px 9px rgb(237 9 51 / 85%);
+    border: 3px solid #fbf5f5;
+}
+    .profile{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .user-img{
+      padding: 5px;
+      margin: 5px;
+    }
+    .user-name{
+      padding:4px;
+
+    }
+    .user-name span{
+      font-size: 45px;
+
     }
 
     header h1 {
@@ -60,7 +77,7 @@
     /* Skills Section */
     .skills {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 1rem;
     }
 
@@ -186,9 +203,14 @@
 
   <!-- Header Section -->
   <header>
-    <h1>Hello , I'm Dnyaneshwar Ravindra Chaudhari</h1>
-    <img src="amol2.jpg" alt="Developer Image">
-    <p>Java Fullstack Developer</p>
+    <div class="profile">
+      <div class="user-img">
+        <img src="amol2.jpg" alt="User Logo" srcset="">
+      </div>
+      <div class="user-name">
+        <span>Hi, I'm Dnyaneshwar Ravindra Chaudhari</span>
+      </div>
+    </div>
   </header>
 
   <!-- Skills Section -->
@@ -196,6 +218,7 @@
     <h2>Skills</h2>
     <div class="skills">
       <div class="skill">
+        <img src="android-studio-icon.png" alt="" srcset="" width="100px" height="100px">
         <h3>Java</h3>
         <p>Proficient in Java development, OOP, and advanced frameworks.</p>
       </div>
@@ -215,6 +238,26 @@
         <h3>HTML & CSS</h3>
         <p>Creative front-end design with animations and responsiveness.</p>
       </div>
+      <div class="skill">
+        <h3>C#.NET</h3>
+        <p>Creative front-end design with animations and responsiveness.</p>
+      </div>
+      <div class="skill">
+        <h3>Microsoft-SQL Server</h3>
+        <p>Creative front-end design with animations and responsiveness.</p>
+      </div>
+      <div class="skill">
+        <h3>Node.Js</h3>
+        <p>Creative front-end design with animations and responsiveness.</p>
+      </div>
+      <div class="skill">
+        <h3>MongoDB</h3>
+        <p>Creative front-end design with animations and responsiveness.</p>
+      </div>
+      <div class="skill">
+        <h3>Visual Studio  </h3>
+        <p>Creative front-end design with animations and responsiveness.</p>
+      </div>
     </div>
   </section>
 
@@ -228,8 +271,8 @@
         <span>2021-2024</span>
       </div>
       <div class="education-card">
-        <h3>Certification in Fullstack Development</h3>
-        <p>ABC Institute, 2021</p>
+        <h3>Certification in Java Fullstack Development</h3>
+        <p>Zidio Development , 2025</p>
       </div>
     </div>
   </section>
@@ -261,17 +304,31 @@
   </section>
 
 
+  <!-- Experience Section -->
+  <section>
+    <h2>Experience</h2>
+    <div class="projects">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="zidio1.png" alt="Project 1">
+        <h3>Zidio Development - Java Fullstack Developer</h3>
+        <p>Internship January 2025 - March 2025</p>
+      </div>
+      
+    </div>
+  </section>
+
   <!-- Contact Section -->
   <section class="contact">
     <h2>Contact Me</h2>
     <p>Let's build something amazing together!</p>
-    <a href="mailto:john.doe@example.com">Email Me</a>
+    <a href="mailto:amol9665506208@gmail.com">Email Me</a>
   </section>
 
 
   <!-- Footer -->
   <footer>
-    &copy; 2025 John Doe. All rights reserved.
+    &copy; 2025 Dnyaneshwar Chaudhari. All rights reserved.
   </footer>
 
   <script>
